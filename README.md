@@ -19,6 +19,6 @@ docker build --tag <your_image_name> .
 docker run -d --name Dinosaur -p 8080:80 <your_image_name>
 
 Now go to your browser and type:
-localhost://8080
+localhost:8080
 
 Have Fun!
