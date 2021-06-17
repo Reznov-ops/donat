@@ -1,0 +1,9 @@
+In this directory are my dinosaur game files which I mounted to /usr/share/nginx/html
+to host the game in the nginx web server - thats what the "dinosaur" container is running
+
+There is also a Dockerfile in this directory in order to create the image "donat" from which
+you can run containers without needing to specify " -v $(pwd):/usr/share/nginx/html" for mounting
+my files to the web server's because the Dockerfile already does that for you
+
+We can "docker pull donatllozana/reznov:latest" to pull the image we used to run the Dino Game
+in our container

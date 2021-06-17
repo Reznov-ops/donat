@@ -1,0 +1,52 @@
+.everything {
+    image-rendering: pixelated;
+    position: relative;
+    top: 150px;
+    left: 485px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* me hashtag lidhesh me html ose nashta edhe me najsen tjeter permes id */
+#game { 
+    width: 500px;
+    height: 200px;
+    border: 2px solid grey;
+}
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: lightseagreen;
+    position: relative;
+    bottom: 52.5px;
+    left: 25px;
+}
+.animate{
+    animation: jump 500ms;
+}
+@keyframes jump {
+    50%{bottom: 120px;} 
+    /* qata pixels tregojn sa nalt ka me kcy karakteri tu lan hapesire
+    100px prej venit fillestar ku u paraqit karakteri */
+}
+
+#block {
+    width: 40px;
+    height: 25px;
+    background-color: brown;
+    position: relative;
+    bottom: 77.5px; 
+    /* largesia qe duhet me lan objekti prej pozicionit fillestar */
+    left: 100px;
+    animation: block 1s infinite linear;
+    /* kur e boj left shkon ntdjatht se qato pixels qe po
+    ja jepi un jon hapesira qe ka me lan ne anen e majt e tani me dal
+    objekti */
+}
+@keyframes block{
+    0%{left: 480px;} /* shpejtesia qe po vjen blloku */
+    100%{left: -5px;} 
+    /* largesia qe ka me nejt blloku jasht kutise e tani mu kthy
+    pra sa vonohet derisa sa tkthehet apet ne anen e djathte */ 
+}
